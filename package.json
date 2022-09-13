@@ -1,6 +1,6 @@
 {
   "name": "@sushydev/vercel-deploy",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "source": "src/main.ts",
   "module": "bin/main.mjs",
   "scripts": {
