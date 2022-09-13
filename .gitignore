@@ -90,3 +90,6 @@ sw.*
 *.swp
 .vercel
 .vercel_cache
+
+# Parcel
+.parcel-cache
