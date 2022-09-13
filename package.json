@@ -35,5 +35,5 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@sushydev"
   },
-  "license": "GPL-3"
+  "license": "GPL-3.0"
 }
