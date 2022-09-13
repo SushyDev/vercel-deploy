@@ -31,3 +31,10 @@ export async function prepare() {
     console.info('Building nuxt');
     await buildNuxt();
 }
+
+//esmodule get absolute path
+import {fileURLToPath} from 'url';
+import {dirname} from 'path';
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+console.log(__dirname);
