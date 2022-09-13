@@ -1,6 +1,6 @@
 {
   "name": "@sushydev/nuxt-vercel-deploy",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "source": "src/main.ts",
   "module": "dist/main.mjs",
   "scripts": {
