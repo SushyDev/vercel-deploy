@@ -1,6 +1,6 @@
 {
-  "name": "nuxt-vercel-deploy",
-  "version": "0.0.1",
+  "name": "@sushydev/nuxt-vercel-deploy",
+  "version": "0.0.2",
   "source": "src/main.ts",
   "module": "dist/main.mjs",
   "scripts": {
@@ -33,7 +33,8 @@
     "url": "git+github.com:sushydev/nuxt-vercel-deploy.git"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@sushydev"
+    "access": "public",
+    "registry": "https://npm.pkg.github.com/"
   },
   "license": "GPL-3.0"
 }
