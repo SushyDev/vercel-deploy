@@ -23,7 +23,7 @@ jobs:
           always-auth: true
           scope: '@sushydev'
       - run: yarn
-      - run: echo //npm.pkg.github.com/:_authToken=$GITHUB_TOKEN >> ~/.npmrc
+      - run: echo //npm.pkg.github.com/:_authToken=$secrets.GITHUB_TOKEN >> ~/.npmrc
       - run: yarn publish
         env:
-          NODE_AUTH_TOKEN: ${{ yarnGITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
