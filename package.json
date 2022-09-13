@@ -1,0 +1,32 @@
+{
+  "name": "nuxt-vercel-deploy",
+  "private": true,
+  "version": "0.0.0",
+  "source": "src/main.ts",
+  "module": "dist/main.mjs",
+  "scripts": {
+    "build": "rm -rf dist && parcel build",
+    "test": "vercel-deploy"
+  },
+  "devDependencies": {
+    "@parcel/resolver-glob": "^2.7.0",
+    "@types/node": "^18.7.16",
+    "parcel": "^2.7.0",
+    "parcel-reporter-static-files-copy": "^1.4.0"
+  },
+  "bin": {
+    "vercel-deploy": "dist/main.mjs"
+  },
+  "engines": {
+    "node": "16.x"
+  },
+  "staticFiles": {
+    "staticPath": "src/assets",
+    "staticOutPath": "assets"
+  },
+  "dependencies": {
+    "@nuxt/core": "^2.15.8",
+    "@types/fs-extra": "^9.0.13",
+    "fs-extra": "^10.1.0"
+  }
+}
