@@ -2,7 +2,7 @@
   "name": "@sushydev/vercel-deploy",
   "version": "0.0.3",
   "source": "src/main.ts",
-  "module": "dist/main.mjs",
+  "module": "bin/main.mjs",
   "scripts": {
     "build": "rm -rf dist && parcel build",
     "test": "vercel-deploy"
@@ -14,8 +14,11 @@
     "parcel-reporter-static-files-copy": "^1.4.0"
   },
   "bin": {
-    "vercel-deploy": "dist/main.mjs"
+    "vercel-deploy": "bin/main.mjs"
   },
+  "files": [
+    "bin"
+  ],
   "engines": {
     "node": "16.x"
   },
